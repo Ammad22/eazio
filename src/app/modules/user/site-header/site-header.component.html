@@ -1,0 +1,43 @@
+<nav class="navbar navbar-light navbar-expand-lg py-lg-5 px-xl-5 px-sm-3">
+    <div class="container-fluid">
+
+        <a href="/" class="navbar-brand d-flex w-30 ps-2 ps-lg-4 mr-auto">
+            <img src="../../../../assets/images/Logo.svg" alt="" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav w-100 justify-content-center gap-2">
+                <li class="nav-item active">
+                    <a class="nav-link" href="">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Careers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Features</a>
+                </li>
+            </ul>
+            <div class="d-flex ml-auto w-100 justify-content-start justify-content-lg-end">
+                <div class="dropdown pe-1">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="../../../../assets/images/world.svg" alt="dropdown image" class="img-responsive">
+                        English
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Arabic</a></li>
+                    </ul>
+                </div>
+                <button class="btn btn-login-outline flex-shrink-0" type="button">Log In</button>
+                <button class="btn btn-demo-outline px-4 flex-shrink-0" type="button">Get Demo</button>
+            </div>
+        </div>
+    </div>
+</nav>
+<router-outlet></router-outlet>

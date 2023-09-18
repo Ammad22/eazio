@@ -1,0 +1,60 @@
+<section class="container px-4 px-lg-3">
+    <div class="row justify-content-center">
+        <div class="col-sm-6">
+            <div class="font-poppin p-0 pt-md-5">
+                <h1 class="signin-heading mt-5 mb-3 font-600">Sign in to</h1>
+                <h3 class="font-600 mb-5 signin-desc">Lorem Ipsum is simply</h3>
+                <p class="font-size-17 mb-1">If you don’t have an account register</p>
+                <p class="font-size-17 mb-5">You can <a class="text-decoration-none text-purple ps-2 font-600"
+                        [routerLink]="['/signup']">Register here !</a></p>
+            </div>
+        </div>
+        <div class="col-sm-4 offset-sm-1 ps-lg-5">
+            <form [formGroup]="form" class="font-poppin" (ngSubmit)="onSubmit()">
+                <h3 class="signin-form-heading my-4 d-md-block d-none">Sign in</h3>
+
+                <input autocomplete type="text" class="form-control mb-5 border-0 custom-input-style"
+                    placeholder="Enter email or user name" formControlName="emailOrUsername">
+
+                <div class="input-group mb-3">
+
+                    <input autocomplete type="{{ passwordVisible ? 'text' : 'password' }}"
+                        class="form-control border-0 custom-input-style" placeholder="Password" aria-label="Password"
+                        aria-describedby="basic-addon" formControlName="password">
+
+                    <span class="input-group-text p-4 custom-input-style border-0" id="basic-addon"
+                        (click)="togglePasswordVisibility()">
+                        <img src="../../../../assets/images/{{ passwordVisible ? 'visible.png' : 'invisible.svg' }}">
+                    </span>
+                </div>
+                <div *ngIf="loginfailed" class="error-msg">Username or Password is Incorrect.</div>
+
+                <p class="text-end  mb-5">
+                    <a class="text-grey text-decoration-none small" href="">Forgot password ?</a>
+                </p>
+
+                <button class="w-100 btn btn-lg custom-button-style py-3" type="submit" [disabled]="!form.valid">Log
+                    in</button>
+
+                <p class="mt-5 mb-3 text-grey text-center">or continue with</p>
+                <ul class="d-flex justify-content-center gap-3 mt-5 p-0">
+                    <li class="d-block text-decoration-none">
+                        <a href="">
+                            <img src="../../../../assets/images/Facebook.svg">
+                        </a>
+                    </li>
+                    <li class="d-block text-decoration-none">
+                        <a href="">
+                            <img src="../../../../assets/images/apple.svg">
+                        </a>
+                    </li>
+                    <li class="d-block text-decoration-none">
+                        <a href="">
+                            <img src="../../../../assets/images/google.svg">
+                        </a>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</section>

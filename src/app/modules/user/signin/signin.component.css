@@ -1,0 +1,7 @@
+.error-msg{
+    position: relative;
+    top: -13px;
+    font-size: 12px;
+    padding-left: 8px;
+    color: #dc3545!important;
+}

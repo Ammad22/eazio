@@ -1,1 +1,97 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+
+.navbar-nav .active{
+    border-bottom: 4px solid #F4711E;
+    font-weight:700;
+}
+.nav-item{
+    font-family:'Source Sans Pro', sans-serif;
+}
+.btn-login-outline {
+    border-radius: 0;
+    border-left: 1px solid #3D474D;
+}
+.btn-demo-outline{
+    border-color: #FF9002;
+}
+.custom-input-style{
+    border-radius: 8px;
+    background-color: #FFF7ED;
+}
+.signin-form-heading{
+    color: #000;
+    font-family: 'Poppins Bold', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.custom-input-style::placeholder { 
+    color: #FAB777;
+ }
+ .signin-heading{
+    color: #000;
+    font-size: 50px;
+    font-style: normal;
+    line-height: normal;
+ }
+.font-poppin{
+    font-family: 'Poppins', sans-serif;
+}
+.font-400{
+    font-weight: 400;
+}
+.font-500{
+    font-weight: 500;
+}
+.font-600{
+    font-weight: 600;
+}
+.font-700{
+    font-weight: 700;
+}
+.font-800{
+    font-weight: 800;
+}
+.custom-button-style{
+    font-size: 16px;
+    color: #FFF;
+    border-radius: 9px;
+    background-color: #F4711E;
+}
+.custom-button-style:hover{
+    font-size: 16px;
+    color: #F4711E;
+    background-color: #FFF;
+    border: 1px solid #F4711E;
+}
+.w-30{
+    width: 30%!important;
+}
+.text-grey{
+    color: #B5B5B5 !important;
+}
+.signin-desc{
+    font-size: 35px;
+}
+.font-size-17{
+    font-size: 17px;
+}
+.text-purple{
+    color: #4D47C3 !important;
+}
+@media only screen and (max-width: 768px) {
+    .signin-heading{
+        font-size: 40px;
+     }
+     .signin-desc{
+        font-size: 25px;
+    }
+}
+.form-control{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    padding: 20px 27px !important;
+}
